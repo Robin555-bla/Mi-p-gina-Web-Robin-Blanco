@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio Web - 1590-25-5978</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        #contenedor {
+            display: flex;
+            height: 100vh;
+        }
+        #menu {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #contenido {
+            width: 80%;
+            border: none;
+        }
+        a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div id="contenedor">
+    <div id="menu">
+        <h1>Mi Pagina Web</h1>
+        <h3>Menú</h3>
+        <a href="hoja_de_vida.html" target="contenido">Hoja de Vida</a>
+        <a href="notas.html" target="contenido">Notas</a>
+        <a href="galeria.html" target="contenido">Galería</a>
+        <a href="video.html" target="contenido">Video de YouTube</a>
+        <a href="juego.html" target="contenido">Juego</a>
+        <a href="manual.html" target="contenido">Manual Técnico</a>
+    </div>
+
+    <iframe id="contenido" name="contenido" src="hoja_de_vida.html" width="100%" height="100%"></iframe>
+</div>
+
+</body>
+</html>
