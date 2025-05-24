@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f4f8, #ffffff);
+            margin: 0;
+            padding: 40px 10px;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            max-width: 700px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1a73e8;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f7fb;
+        }
+
+        tr:hover {
+            background-color: #dceeff;
+        }
+
+        td:first-letter {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <h2>Notas Primer y Segundo Parcial</h2>
+        <table>
+            <tr>
+                <th>Curso</th>
+                <th>Parcial 1</th>
+                <th>Parcial 2</th>
+            </tr>
+            <tr>
+                <td>Introducción a los sistemas de cómputo</td>
+                <td>7</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

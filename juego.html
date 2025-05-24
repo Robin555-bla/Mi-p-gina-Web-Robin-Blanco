@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego: Adivina el Número</title>
+</head>
+<body>
+    <h2>🎮 Juego: Adivina el número</h2>
+    <p>Ingresa un número del 1 al 10:</p>
+    <input type="number" id="numero" min="1" max="10">
+    <br><br>
+    <button onclick="verificar()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        // Genera un número aleatorio entre 1 y 10
+        let secreto = Math.floor(Math.random() * 10) + 1;
+
+        function verificar() {
+            // Obtiene el número ingresado
+            let num = parseInt(document.getElementById("numero").value);
+            let res = document.getElementById("resultado");
+
+            // Validación del número ingresado
+            if (isNaN(num) || num < 1 || num > 10) {
+                res.innerText = "⚠️ Ingresa un número válido entre 1 y 10.";
+                res.style.color = "red"; // Color rojo de advertencia
+                return;
+            }
+
+            // Compara el número ingresado con el número secreto
+            if (num === secreto) {
+                res.innerText = "🎉 ¡Correcto! Adivinaste el número.";
+                res.style.color = "green"; // Color verde de éxito
+            } else {
+                res.innerText = "❌ Intenta de nuevo.";
+                res.style.color = "orange"; // Color naranja para error
+            }
+        }
+    </script>
+</body>
+</html>

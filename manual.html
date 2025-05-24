@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manual Técnico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #1a73e8;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #0d47a1;
+            margin-top: 30px;
+            border-left: 6px solid #1a73e8;
+            padding-left: 10px;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f7f9fc;
+            border-left: 4px solid #1a73e8;
+            padding: 15px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+
+        code {
+            background-color: #e8eef6;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Manual Técnico: Creación del Sitio Web Personal</h2>
+
+        <h3>1. Objetivo</h3>
+        <p>El objetivo de este proyecto fue crear un sitio web personal utilizando marcos, con un menú lateral que permite visualizar distintas secciones dentro de un área de contenido.</p>
+
+        <h3>2. Estructura del proyecto</h3>
+        <p>La estructura del sitio es la siguiente:</p>
+        <pre>
+mi_sitio/
+├── index.html              ← Página principal con menú y marco (iframe)
+├── hoja_de_vida.html       ← Información personal del alumno
+├── notas.html              ← Tabla con nombres y notas
+├── galeria.html            ← Galería de 10 imágenes
+├── video.html              ← Página con video de YouTube
+├── juego.html              ← Juego en JavaScript (simple)
+├── manual.html             ← Este manual técnico
+└── imagenes/               ← Carpeta con las imágenes de la galería
+    ├── img1.jpg
+    ├── img2.jpg
+    └── ...hasta img10.jpg
+        </pre>
+
+        <h3>3. Paso a paso de creación</h3>
+        <ol>
+            <li><strong>Se creó el archivo <code>index.html</code></strong> con diseño de dos columnas: un menú lateral con enlaces y un <code>&lt;iframe&gt;</code> donde se muestra el contenido de las otras páginas.</li>
+            <li><strong>Se crearon páginas individuales</strong> para cada sección del menú:
+                <ul>
+                    <li><code>hoja_de_vida.html</code>: contiene datos personales del alumno.</li>
+                    <li><code>notas.html</code>: tabla con cursos y notas del primer y segundo parcial.</li>
+                    <li><code>galeria.html</code>: contiene 10 imágenes almacenadas en una carpeta <code>imagenes/</code>.</li>
+                    <li><code>video.html</code>: contiene un video incrustado de YouTube.</li>
+                    <li><code>juego.html</code>: contiene un pequeño juego en JavaScript (Adivina el número).</li>
+                    <li><code>manual.html</code>: explica cómo se creó el sitio.</li>
+                </ul>
+            </li>
+            <li><strong>Se usaron estilos CSS básicos</strong> para mejorar la presentación.</li>
+            <li><strong>Las imágenes de la galería</strong> fueron agregadas en una carpeta y referenciadas con <code>&lt;img src="imagenes/..."&gt;</code>.</li>
+            <li><strong>El sitio puede subirse a un hosting gratuito</strong> como GitHub Pages o Netlify, incluyendo el número de carnet en la URL.</li>
+        </ol>
+
+        <h3>4. Lenguajes y herramientas utilizados</h3>
+        <ul>
+            <li>HTML5 para la estructura del sitio.</li>
+            <li>CSS para estilos básicos.</li>
+            <li>JavaScript para interacción en el juego.</li>
+            <li>GitHub Pages (opcional) para publicar el sitio.</li>
+        </ul>
+
+        <h3>5. Consideraciones finales</h3>
+        <p>El uso de marcos mediante <code>&lt;iframe&gt;</code> permite mostrar múltiples páginas dentro de una sola sin recargar toda la web. Esta técnica es útil para sitios simples, pero en proyectos más grandes se recomienda usar otras estructuras como componentes o SPA.</p>
+    </div>
+</body>
+</html>
